@@ -1,7 +1,7 @@
 basic.forever(function () {
-    if (true) {
+    if (input.lightLevel() < 80) {
         pins.servoWritePin(AnalogPin.P2, 180)
     } else {
-        pins.digitalWritePin(DigitalPin.P2, 0)
+        pins.servoWritePin(AnalogPin.P2, 0)
     }
 })
